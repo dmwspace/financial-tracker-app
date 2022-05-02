@@ -13,6 +13,7 @@ function Month() {
                 value={date}
                 tileClassName="tile"
                 showNeighboringMonth={false}
+                onClickDay={(value, event) => alert('You clicked on: ', value.toString().slice(0, 6))}
             />
         </div>
     )

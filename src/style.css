@@ -2,5 +2,8 @@
     width: 200em;
 }
 .tile {
+    display: flex;
     height: 10em;
+    text-align: left;
+    vertical-align: text-top;
 }
