@@ -1,5 +1,5 @@
 import React from 'react';
-import Month from './components/Month'
+import Month from './components/month/Month'
 import './style.css';
 
 function App() {
