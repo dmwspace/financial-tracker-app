@@ -1,12 +1,19 @@
 import React from 'react';
-// import Popup from 'reactjs-popup';
-// import './form.css'
+import './form.css'
 
-export default function Form(props) {
-    console.log(props.date)
+export default function Form({dateClicked, handleClick}) {
     return (
         <div className='form'>
-            <h1>{props.date}</h1>
+            <h1>{dateClicked}</h1>
+            <input type="text"
+                placeholder="Enter memo here"
+            />
+            <input type="number"
+                placeholder="Enter amount here"
+            /><span><input type="checkbox" /></span>
+            <button onClick={handleClick}>
+                Close form
+            </button>
         </div>
             
     )

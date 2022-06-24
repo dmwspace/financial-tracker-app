@@ -17,4 +17,5 @@
 .form {
     width: 30%;
     height: 30%;
+    z-index: 9;
 }

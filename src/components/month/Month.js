@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import Popup from 'reactjs-popup';
+import Form from '../form/Form';
 import 'react-calendar/dist/Calendar.css';
 
 
@@ -18,12 +19,10 @@ export default function Month() {
     const dateClicked = `${current.getMonth() + 1}/${current.getDate()}/${current.getFullYear()}`
     const modalPopup = 
         <Popup open={open} position="left center" closeOnDocumentClick onClose={closeModal}>
-            <div className='form'>
-                <h1>{dateClicked}</h1>
-                <input type="text"
-                    placeholder="Input memo here"
-                />
-            </div>
+            <Form 
+                dateClicked={dateClicked} 
+                handleClick={closeModal}
+            />
         </Popup>
 
     return (
