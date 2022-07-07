@@ -11,11 +11,11 @@ export default function Form({dateClicked, handleClick}) {
             <input type="number"
                 placeholder="Enter amount here"
             /><span><select>
-                    <option value="Credit">Credit</option>
-                    <option value="Debit">Debit</option>
+                    <option value="credit">Credit</option>
+                    <option value="debit">Debit</option>
                 </select></span>
             <button onClick={handleClick}>
-                Close form
+                Enter
             </button>
         </div>
             
