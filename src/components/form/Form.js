@@ -10,7 +10,10 @@ export default function Form({dateClicked, handleClick}) {
             />
             <input type="number"
                 placeholder="Enter amount here"
-            /><span><input type="checkbox" /></span>
+            /><span><select>
+                    <option value="Credit">Credit</option>
+                    <option value="Debit">Debit</option>
+                </select></span>
             <button onClick={handleClick}>
                 Close form
             </button>
